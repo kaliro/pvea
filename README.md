@@ -16,6 +16,10 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
     - [ ] List firewall rules.
 
 
+## Main contributors
+As of now, [Ami](https://github.com/AmiCole) is the only main contributor.
+
+
 ## License
 
 Copyright 2020 Ami Cole
