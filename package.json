@@ -1,0 +1,32 @@
+{
+  "name": "pvea",
+  "version": "0.0.1",
+  "description": "proxmox api library for node.js.",
+  "main": "lib/pvea.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbx-systems/pvea.git"
+  },
+  "keywords": [
+    "pvea",
+    "proxmox",
+    "node",
+    "api",
+    "pve"
+  ],
+  "author": "rbx systems",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rbx-systems/pvea/issues"
+  },
+  "homepage": "https://github.com/rbx-systems/pvea#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
