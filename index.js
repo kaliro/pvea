@@ -11,6 +11,22 @@ async function main() {
     console.log(res)
   })
 
+  pvea.getClusterStatus().then( res => {
+    console.log(res)
+  })
+
+  pvea.getClusterBackupSchedule().then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeNetworks('node').then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeInterface('node', 'eth0').then( res => {
+    console.log(res)
+  })
+
 }
 
 pvea.run(main)
