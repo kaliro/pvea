@@ -3,9 +3,9 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
 ## To-Do List:
 
-- [ ] Core functionality.
-    - [ ] Authenticate with Proxmox VE API.
-    - [ ] List Nodes VMs, Containers, Storage Devices, etc.
+- [X] Core functionality.
+    - [X] Authenticate with Proxmox VE API.
+    - [X] Get version.
 
 - [ ]  LXC Container Functionality. (Priority)
     - [ ] Create LXC containers.
