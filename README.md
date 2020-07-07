@@ -22,6 +22,9 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 As of now, [Ami](https://github.com/AmiCole) is the only main contributor.
 
 
+## Notes
+Thanks to [ttarvis](https://github.com/ttarvis) for writing [node-proxmox](https://github.com/ttarvis/node-proxmox)! Code was used for reference and function names are taken from it. Also thanks to [alo-is](https://github.com/alo-is) for writing another module also called [node-proxmox](https://github.com/alo-is/node-proxmox).
+
 ## License
 
 Copyright 2020 Ami Cole
