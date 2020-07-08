@@ -11,7 +11,6 @@ async function main() {
     console.log(res)
   })
 
-  pvea.getClusterStatus().then( res => {
     console.log(res)
   })
 
