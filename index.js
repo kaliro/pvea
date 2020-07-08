@@ -11,18 +11,31 @@ async function main() {
     console.log(res)
   })
 
+  pvea.getNodes().then( res => {
     console.log(res)
   })
 
-  pvea.getClusterBackupSchedule().then( res => {
+  pvea.getNodeVersion('rbx-01').then( res => {
     console.log(res)
   })
 
-  pvea.getNodeNetworks('node').then( res => {
+  pvea.getNodeTime('rbx-01').then( res => {
     console.log(res)
   })
 
-  pvea.getNodeInterface('node', 'eth0').then( res => {
+  pvea.getNodeLog('xxx', { limit: '3', since: '2020-07-07' }).then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeTasks('xxx', { limit: '3', vmid: '106' }).then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeStatus('xxx').then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeSubscription('xxx').then( res => {
     console.log(res)
   })
 
