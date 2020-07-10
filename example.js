@@ -39,6 +39,13 @@ async function main() {
     console.log(res)
   })
 
+  pvea.getNodeReport('xxx').then( res => {
+    console.log(res)
+  })
+
+  pvea.getNodeNetstat('xxx').then( res => {
+    console.log(res)
+  })
 
 }
 
