@@ -35,6 +35,11 @@ async function main() {
     console.log(res)
   })
 
+  pvea.getNodeSubscription('xxx').then( res => {
+    console.log(res)
+  })
+
+
 }
 
 pvea.run(main)
