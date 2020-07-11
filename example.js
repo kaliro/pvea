@@ -47,6 +47,16 @@ async function main() {
     console.log(res)
   })
 
+  pvea.createLxcContainer(node, {
+    vmid: 107,
+    hostname: 'test',
+    password: 'secret',
+    ostemplate: 'storage:vztmpl/debian-10.0-standard_10.0-1_amd64.tar.gz',
+    memory: 512,
+    swap: 512,
+    storage: 'containers'
+  })
+
 }
 
 pvea.run(main)
