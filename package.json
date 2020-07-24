@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rbx-systems/pvea.git"
+    "url": "git+https://github.com/AmiCole/pvea.git"
   },
   "keywords": [
     "pvea",
@@ -23,9 +23,9 @@
   "author": "rbx systems",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/rbx-systems/pvea/issues"
+    "url": "https://github.com/AmiCole/pvea/issues"
   },
-  "homepage": "https://github.com/rbx-systems/pvea#readme",
+  "homepage": "https://github.com/AmiCole/pvea#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "colors": "^1.4.0"
