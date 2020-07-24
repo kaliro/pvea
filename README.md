@@ -39,6 +39,8 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
     - [ ] Create firewall rule.
     - [ ] Get firewall rule.
     - [ ] Update firewall rule.
+    
+- [ ] Write documentation for this library.
 
 ## Example:
     // pvea library.
