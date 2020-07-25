@@ -44,22 +44,22 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
 ## Example:
     // pvea library.
-    const pveajs = require(pvea)
+    const pvea = require(pvea)
     
     // create a new instance, you can use this to connect to multiple nodes if you want.
-    const pvea = new pveajs('hostname', 'user@auth', 'password')
+    const pveaInstance = new pvea('hostname', 'user@auth', 'password')
     
     // our main application.
     async function main() {
         // get version of proxmox API.
-        pvea.getVersion().then( res => {
+        pveaInstance.getVersion().then( res => {
             // log result.
             console.log(res)
         })
     }
     
     // execute the application.
-    pvea.run(main)
+    pveaInstance.run(main)
 
 
 ## Main contributors
