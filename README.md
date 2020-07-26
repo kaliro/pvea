@@ -51,7 +51,6 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
 ## Example:
 
-    ```javascript
     // pvea library.
     const pvea = require("pvea")
 
@@ -69,7 +68,7 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
     // execute the application.
     pveaInstance.run(main)
-    ```
+
 
 ## Main contributors
 As of now, [Ami](https://github.com/AmiCole) is the only main contributor.
