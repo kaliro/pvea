@@ -35,6 +35,12 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
     - [X] Shutdown LXC container.
     - [X] Start LXC container.
     - [X] Stop LXC container.
+    - [X] Get LXC container status.
+    - [X] Get LXC container configuration.
+    - [X] Get LXC container features.
+    - [X] Get LXC container pending status.
+    - [X] Migrate LXC container.
+    - [X] Create LXC  container template.
     - [ ] Finish other LXC container related things.
 
 
