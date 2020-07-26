@@ -27,10 +27,12 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
 - [ ]  Core LXC Container Functionality. (Priority)
     - [X] Create LXC container.
-    - [ ] Remove LXC container.
-    - [ ] Shutdown LXC container.
-    - [ ] Start LXC container.
-    - [ ] Stop LXC container.
+    - [X] Shutdown LXC container.
+    - [X] Start LXC container.
+    - [X] Stop LXC container.
+    - [X] Mount LXC container.
+    - [X] Unmount LXC container.
+    - [ ] Finish other LXC container related things.
 
 
 - [ ] Firewall functionality.
@@ -39,16 +41,16 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
     - [ ] Create firewall rule.
     - [ ] Get firewall rule.
     - [ ] Update firewall rule.
-    
+
 - [ ] Write documentation for this library.
 
 ## Example:
     // pvea library.
     const pvea = require("pvea")
-    
+
     // create a new instance, you can use this to connect to multiple nodes if you want.
     const pveaInstance = new pvea('hostname', 'user@auth', 'password')
-    
+
     // our main application.
     async function main() {
         // get version of proxmox API.
@@ -57,7 +59,7 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
             console.log(res)
         })
     }
-    
+
     // execute the application.
     pveaInstance.run(main)
 
