@@ -6,7 +6,7 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 
 ## Installation:
 
-  ```npm i pvea``` or  ```yarn add pvea```.
+  `npm i pvea` or  `yarn add pvea`.
 
 
 ## To-Do List:
@@ -35,8 +35,6 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
     - [X] Shutdown LXC container.
     - [X] Start LXC container.
     - [X] Stop LXC container.
-    - [X] Mount LXC container.
-    - [X] Unmount LXC container.
     - [ ] Finish other LXC container related things.
 
 
