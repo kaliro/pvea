@@ -4,7 +4,7 @@ pvea (pronounced pea-va) is a node.js client for the proxmox api. primarily focu
 ###### [Proxmox API wiki.](https://pve.proxmox.com/wiki/Proxmox_VE_API)
 ###### [Proxmox API documentation.](https://pve.proxmox.com/pve-docs/api-viewer/index.html)
 
-###### Installation
+## Installation
   `npm i pvea`
 
 
