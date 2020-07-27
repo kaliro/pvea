@@ -11,67 +11,97 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
 
 ## To-Do List:
 
-- [X] Core functionality.
+- [X] Basic functionality.
     - [X] Authenticate with Proxmox VE API.
     - [X] Check if authentication token is expired.
-    - [X] Get version.
-    - [X] Get nodes.
-    - [X] Get node version.
-    - [X] Get node time.
-    - [X] Get node log.
-    - [X] Get node tasks.
-    - [X] Get node status.
-    - [X] Get node subscription.
-    - [X] Get node report.
-    - [X] Get node netstat.
-    - [X] Get node journal.
-    - [X] Get node hosts.
-    - [X] Get node dns.
-    - [X] Get node config.
-    - [X] Get node aplinfo.
+    - [X] Get api version.
 
-- [ ]  Core LXC Container Functionality. (Priority)
-    - [X] Create LXC container.
-    - [X] Shutdown LXC container.
-    - [X] Start LXC container.
-    - [X] Stop LXC container.
-    - [X] Get LXC container status.
-    - [X] Get LXC container configuration.
-    - [X] Get LXC container features.
-    - [X] Get LXC container pending status.
-    - [X] Migrate LXC container.
-    - [X] Create LXC  container template.
-    - [ ] Finish other LXC container related things.
+- [X] storage
+    - [X] getStorage(param)
+    - [X] createStorage(param)
+    - [X] getStorageConfig(storage)
+    - [X] deleteStorageConfig(storage, param)
+    - [X] getStorageStatus(node, storage)
+    - [X] getStorageRrdData(node, storage, param)
+    - [X] getStorageContent(node, storage, param)
+    - [X] allocateDiskImage(node, storage, param)
+    - [X] getVolumeAttributes(node, storage, volume, param)
+    - [X] deleteVolume(node, storage, volume, param)
+    - [X] createBackup(node, param)
+    - [X] getBackupConfig(node, param)
+    
+- [X] pools
+    - [X] getPools()
+    - [X] getPoolConfig(poolid)
+    - [X] deletePoolConfig(poolid)
+    - [X] updatePoolConfig(poolid, param)
+    
+- [ ] nodes
+    - [X] getNodes()
+    - [X] wakeNode(node)
+    - [X] getNodeVersion(node)
+    - [X] getNodeTime(node)
+    - [X] updateNodeTimeZone(node, param)
+    - [X] getNodeLog(node, param)
+    - [X] getNodeSubscriptionStatus(node)
+    - [X] deleteNodeSubscriptionKey(node)
+    - [X] setNodeSubscriptionKey(node)
+    - [X] updateNodeSubscriptionKey(node)
+    - [X] stopAll(node, param)
+    - [X] getNodeStatus(node)
+    - [X] rebootNode(node)
+    - [X] shutdownNode(node)
+    - [X] startAll(node, param)
+    - [X] getNodeRrdData(node)
+    - [X] getNodeReport(node)
+    - [X] getNodeNetstat(node)
+    - [X] migrateAll(node, param)
+    - [X] getNodeJournal(node, param)
+    - [X] getNodeHostname(node)
+    - [X] setNodeHostname(node, param)
+    - [X] getNodeDnsSettings(node)
+    - [X] setNodeDnsSettings(node, param)
+    - [X] listNodeCpu(node)
+    - [X] getNodeConfig(node, param)
+    - [X] updateNodeConfig(node, param)
+    - [X] getNodeAplInfo(node)
+    
 
-
-- [ ] Firewall functionality.
-    - [ ] List firewalls.
-    - [ ] List firewall rules.
-    - [ ] Create firewall rule.
-    - [ ] Get firewall rule.
-    - [ ] Update firewall rule.
-
+- [X] tasks
+    - [X] getNodeTasks(node, param)
+    - [X] stopTask(node, upid)
+    - [X] getTaskLog(node, upid, param)
+    - [X] getTaskStatus(node, upid)
+    
+- [X] services
+    - [X] reloadService(node, service)
+    - [X] restartService(node, service)
+    - [X] startService(node, service)
+    - [X] stopService(node, service)
+    - [X] getServiceState(node, service)
+    - [X] listServices(node)
+    
 - [ ] Write documentation for this library.
 
 ## Example:
 
     // pvea library.
-    const pvea = require("pvea")
+    const pveajs = require("pvea")
 
     // create a new instance, you can use this to connect to multiple nodes if you want.
-    const pveaInstance = new pvea('hostname', 'user@auth', 'password')
+    const pvea = new pveajs('hostname', 'user@auth', 'password')
 
     // our main application.
     async function main() {
         // get version of proxmox API.
-        pveaInstance.getVersion().then( res => {
+        pvea.apiVersion().then( res => {
             // log result.
             console.log(res)
         })
     }
 
     // execute the application.
-    pveaInstance.run(main)
+    pvea.run(main)
 
 
 ## Main contributors
