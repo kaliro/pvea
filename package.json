@@ -1,6 +1,6 @@
 {
   "name": "pvea",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "proxmox api library for node.js.",
   "main": "lib/pvea.js",
   "directories": {
