@@ -36,7 +36,7 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] deletePoolConfig(poolid)
     - [X] updatePoolConfig(poolid, param)
     
-- [ ] nodes
+- [X] nodes
     - [X] getNodes()
     - [X] wakeNode(node)
     - [X] getNodeVersion(node)
