@@ -29,13 +29,13 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] deleteVolume(node, storage, volume, param)
     - [X] createBackup(node, param)
     - [X] getBackupConfig(node, param)
-    
+
 - [X] pools
     - [X] getPools()
     - [X] getPoolConfig(poolid)
     - [X] deletePoolConfig(poolid)
     - [X] updatePoolConfig(poolid, param)
-    
+
 - [X] nodes
     - [X] getNodes()
     - [X] wakeNode(node)
@@ -65,14 +65,14 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] getNodeConfig(node, param)
     - [X] updateNodeConfig(node, param)
     - [X] getNodeAplInfo(node)
-    
+
 
 - [X] tasks
     - [X] getNodeTasks(node, param)
     - [X] stopTask(node, upid)
     - [X] getTaskLog(node, upid, param)
     - [X] getTaskStatus(node, upid)
-    
+
 - [X] services
     - [X] reloadService(node, service)
     - [X] restartService(node, service)
@@ -80,7 +80,22 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] stopService(node, service)
     - [X] getServiceState(node, service)
     - [X] listServices(node)
-    
+
+- [X] lxc
+    - [X] listLxcContainers(node)
+    - [X] createLxcContainer(node, param)
+    - [X] createLxcTemplate(node, vmid)
+    - [X] getLxcRRDData(node, vmid, param)
+    - [X] resizeLxcContainer(node, vmid, param)
+    - [X] getLxcPending(node, vmid)
+    - [X] getLxcConfig(node, vmid)
+    - [X] cloneLxcContainer(node, vmid, param)
+    - [X] suspendLxcContainer(node, vmid)
+    - [X] stopLxcContainer(node, vmid)
+    - [X] resumeLxcContainer(node, vmid)
+    - [X] rebootLxcContainer(node, vmid)
+    - [X] getLxcContainerStatus(node, vmid)
+
 - [ ] Write documentation for this library.
 
 ## Example:
