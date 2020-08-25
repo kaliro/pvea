@@ -96,6 +96,12 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] rebootLxcContainer(node, vmid)
     - [X] getLxcContainerStatus(node, vmid)
     - [X] deleteLxcContainer(node, vmid, param)
+    - [X] getLxcSnapshot(node, vmid)
+    - [X] createLxcSnapshot(node, vmid, param)
+    - [X] deleteLxcSnapshot(node, vmid, snapName, param)
+    - [X] getLxcSnapshotConfig(node, vmid, snapName)
+    - [X] updateLxcSnapshotMetadata(node, vmid, snapName, param)
+    - [X] rolllbackLxcContainer(node, vmid, snapName)
 
 - [ ] Write documentation for this library.
 
