@@ -1,5 +1,5 @@
 # pvea
-pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxmox api. Note: atm I am working on this when I have free time when I have the energy. The entire API isn't finished, but a good chunk of it is. Thank you!
+pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxmox api. Note: Because of how busy my life has been (moving across the country, etc) I haven't had much time to work on this. I still have more to implement and I need to write documentation, but a good chunk of the Proxmox API is implemented! 
 
 ###### [Proxmox API wiki.](https://pve.proxmox.com/wiki/Proxmox_VE_API)
 ###### [Proxmox API documentation.](https://pve.proxmox.com/pve-docs/api-viewer/index.html)
@@ -101,7 +101,17 @@ pvea (pronounced pea-va) is a modern and up-to-date node.js client for the proxm
     - [X] deleteLxcSnapshot(node, vmid, snapName, param)
     - [X] getLxcSnapshotConfig(node, vmid, snapName)
     - [X] updateLxcSnapshotMetadata(node, vmid, snapName, param)
-    - [X] rolllbackLxcContainer(node, vmid, snapName)
+    - [X] rollbackLxcContainer(node, vmid, snapName)
+    - [X] getLxcFirewallRefs(node, vmid)
+    - [X] getLxcFirewallOptions(node, vmid)
+    - [X] setLxcFirewallOptions(node, vmid, param)
+    - [X] getLxcFirewallLog(node, vmid, param)
+    - [X] getLxcFirewallRules(node, vmid)
+    - [X] createLxcFirewallRule(node, vmid, param)
+    - [X] getLxcFirewallIPSets(node, vmid)
+    - [X] createLxcFirewallIPSet(node, vmid, param)
+    - [X] getLxcFirewallAliases(node, vmid)
+    - [X] createLxcFirewallAlias(node, vmid, param)
 
 - [ ] Write documentation for this library.
 
