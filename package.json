@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/AmiCole/pvea#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "colors": "^1.4.0"
   }
 }
